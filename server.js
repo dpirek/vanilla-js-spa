@@ -2,8 +2,9 @@ const http = require('http');
 const { respondJson, notFound, parseBody, serverStatic, isStaticRequest } = require('./utils/response');
 const { route } = require('./utils/router');
 const userApi = require('./api/user');
+const { env } = require('process');
 
-const PORT = 8080;
+const PORT = env.PORT || 8080;
 //const AUTH_COOKIE_NAME = 'auth-token';
 
 const router = route();
