@@ -1,3 +1,3 @@
 # Vanilla JavaScript Single Page Application Starter Template
 
-A simple starter template for building single page applications (SPAs) using vanilla JavaScript, HTML, and CSS. It features Vanilla Web Components, a basic routing system, and a mock backend server. There are no build tools or frameworks involved. There are no dependencies, just plain JavaScript.
+A simple starter template for building single page applications (SPAs) using vanilla JavaScript, HTML, and CSS. It features Vanilla Web Components, a basic routing system, and a mock backend server. There are no build tools or frameworks involved. There are no dependencies, just plain JavaScript. Bonus: it works great with AI code assistants, because there is no framework magic, and everything is plain and simple JavaScript.
