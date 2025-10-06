@@ -81,7 +81,8 @@ function contentType(url) {
     ico: 'image/x-icon',
     wasm: 'application/wasm',
     map: 'application/json',
-    woff: 'font/woff'
+    woff: 'font/woff',
+    '/': 'text/html'
   };
 
   return contentTypes[url.split('.').pop()];

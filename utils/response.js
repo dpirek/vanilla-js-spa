@@ -46,8 +46,10 @@ function serverStatic(req, res) {
 }
 
 function isStaticRequest(req) {
+  const { pathname } = url.parse(req.url);
+  if (pathname === '/' || pathname === '/favicon.ico') return true;
   const staticFiles = ['.js', '.css', '.png', '.jpg', '.jpeg', '.gif', '.woff', '.map', '.wasm', '.json', '.svg', '.ico', '.html'];
-  return staticFiles.some(ext => req.url.endsWith(ext));
+  return staticFiles.some(ext => pathname.endsWith(ext));
 }
 
 function notFound(res) {
